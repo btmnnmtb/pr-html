@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr 2</title>
+</head>
+<body>
+    <script>
+        alert("Необходимо ввести ваш номер телеофна "); 
+    
+
+      m = confirm("Введите ваш номер телефона ") ; 
+      
+      tel  = prompt("Ваш телефон" , "") ; 
+      document.writeln("Ваш телефон: " + tel );
+   
+        
+    </script>
+
+<h3>Редактор кодов JavaScript</h3>
+<p> Код:(результат) <br>
+<textarea id="user_code" rows="3" cols="60"></textarea>
+</p>
+<p> Результат:(код) <br>
+<textarea id="result" rows="" cols="60"></textarea>
+</p>
+<p>
+<button onclick="document.all.user_code.value=
+eval(result.value)">
+Выполнить
+</button>
+
+<button onclick="document.all.user_code.value='';
+document.all.result.value='';">
+Очистить
+</button>
+</p>
+<button onclick="document.all.user_code.value=
+eval(result.value)* 2">
+Кнопк которая что-то делает
+</button>
+
+
+
+
+
+<script>
+    ad = "petrov.vi@mail.ru";
+    document.writeln(ad);
+    
+    i = ad.indexOf("@");
+    document.writeln("i=" + i);
+    
+    user = "";
+    for ( j = 0; j < i; j++) {
+    user += ad.charAt(j);
+}
+    domen = "";
+    
+    for ( j = i + 1; j < ad.length; j++) {
+    domen += ad.charAt(j);
+}
+    
+    document.writeln("Пользователь: ", user, " Домен: ",domen)
+    </script>
+    
+</body>
+</html>
